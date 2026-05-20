@@ -9,8 +9,12 @@
     <nav class="sticky-bar">
         <img src="icon.png" alt="Icon" class="bar-icon">
         <span class="bar-title">Singing Salmon Company</span>
+        <p class="bar-info">*This is FAKE</p>
     </nav>
     <div class="hero-section">
+        <div class="hero-link">
+            <p>img from : https://www.sundayfarms.com/products/wild-canned-sockeye-salmon?srsltid=AfmBOoqlk8LP16gXejVlpop5jOuCRy70ZXhmW88twqqiGN8SXOJwnSY4&variant=43373169213675&selling_plan=7652081899</p>
+        </div>
         <div class="hero-text">
             <h1>Singing Salmon Company</h1>
             <h3>canny can can</h3>
@@ -27,7 +31,7 @@
 
             <div class="intro-img-box">
                 <img src="machine.png" alt="Salmon Canning Machine" class="intro-img">
-                <p class="img-caption">Photo of Salmon canning Mrk.2</p>
+                <p class="img-caption">Photo of Salmon canning Mrk.2</p><p class="img-link-1">img from : https://www.producer.com/news/salmon-canning-once-big-business-in-b-c-port/</p>   
             </div>
         </div>
         <p>:D</p>
@@ -94,10 +98,18 @@ Everyone has the right to rest and leisure, including reasonable limitation of w
         .bar-title {
             font-family: 'MyCustomFont', sans-serif;
             font-size: 1.2rem;
-            color: rgba(51,51,51,1);
+            color: rgba(0,0,0,1);
             font-weight: bold;
         }
+        .bar-info {
+            font-family: 'normal-Fontt', sans-serif;
+            text-align: right;
+            font-size: 0.85rem;
+            color: rgba(1,1,1,0.6);
+            margin-left: auto;
+        }
         .hero-section {
+            position: relative;
             background-image: url('salmon_can.png');
             background-size: cover;
             background-position: center;
@@ -108,9 +120,19 @@ Everyone has the right to rest and leisure, including reasonable limitation of w
             align-items: center;
             text-align: center;
         }
+        .hero-link {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-family: 'normal-Fontt', sans-serif;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            margin: 0;
+            z-index: 10;
+        }
         .hero-text {
             color: yellow;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.3);
             padding: 30px;
             border-radius: 10px;
         }
@@ -122,6 +144,7 @@ Everyone has the right to rest and leisure, including reasonable limitation of w
             line-height: 2;
         }
         .intro-container {
+            position: relative;
             display: flex;
             align-items: center;
             gap: 40px;
@@ -136,11 +159,21 @@ Everyone has the right to rest and leisure, including reasonable limitation of w
             height: auto;
             border-radius: 8px;
         }
-        .img-caption{
-            font-size: 0.85rem;
+        .img-caption {
+            font-size: 1.2rem;
             color: rgb(100,100,100);
             text-align: center;
-            margin-top: 8px;
+            margin-top: 2px;
+        }
+        .img-link-1 {
+            position: absolute;
+            bottom: 65px;
+            right: 10px;
+            font-size: 0.6rem;
+            color: rgba(250,250,250,0.7);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 4px;
+            border-radius: 8px;
         }
         .extra-content {
             margin-top: 80px;
